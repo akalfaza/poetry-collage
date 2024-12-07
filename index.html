@@ -5,18 +5,30 @@
     <title> Poetry Collage </title>
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <style>
     *{
-        /* font-family: 'Courier New', Courier, monospace; */
-        font-family:'Times New Roman', Times, serif;
+        font-family: "EB Garamond", serif;
+        font-style: normal;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
         
     }
     body{
-        background-color: #E6D6C3;
+        background-color: #f2f0ef;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
         /* background-image: url("./paper-texture.jpg");
         background-size: contain;
         background-repeat: no-repeat;
@@ -118,7 +130,7 @@
         <h1 id="mydivheader28" style="cursor: grab;">childhood</h1>
     </div>
     <div id="mydiv29" style="position: absolute;text-align: center; white-space: nowrap; z-index: 2;">
-        <h1 id="mydivheader29" style="cursor: grab;">bittersweet</h1>
+        <h1 id="mydivheader29" style="cursor: grab;">warmth</h1>
     </div>
     <div id="mydiv30" style="position: absolute;text-align: center; white-space: nowrap; z-index: 2;">
         <h1 id="mydivheader30" style="cursor: grab; font-size: 28px; font-style: italic;">can love transcend time and space?</h1>
@@ -153,12 +165,11 @@
     <div id="mydiv40" style="position: absolute;text-align: center; white-space: nowrap; z-index: 2;">
         <h1 id="mydivheader40" style="cursor: grab; font-style: italic;">do you remember the sound of laughter?</h1>
     </div>
-    <div id="mydiv41" style="position: absolute;text-align: center; white-space: nowrap; z-index: 2;">
-        <h1 id="mydivheader41" style="cursor: grab;">warmth</h1>
+
+
+    <div id="mydiv41" style="position: absolute; z-index: auto; cursor: grab;">
+        <img id="mydivheader41" src="./pics/2.JPG" style="position: absolute; width: auto; height: 400px;" alt="my brother and I">
     </div>
-
-
-    
     <div id="mydiv42" style="position: absolute; z-index: auto; cursor: grab;">
         <img id="mydivheader42" src="./pics/IMG_9297.JPG" style="position: absolute; width: auto; height: 400px;" alt="my brother and I">
     </div>
@@ -171,15 +182,12 @@
     <div id="mydiv45" style="position: absolute; z-index: auto; cursor: grab;">
         <img id="mydivheader45" src="./pics/1.JPG" style="position: absolute; width: auto; height: 300px;" alt="my brother and I">
     </div>
-    <div id="mydiv46" style="position: absolute; z-index: auto; cursor: grab;">
-        <img id="mydivheader46" src="./pics/2.JPG" style="position: absolute; width: auto; height: 400px;" alt="my brother and I">
-    </div>
 
 
 
     <script>
         //Make the DIV element draggagle:
-        var numOfWords = 46;
+        var numOfWords = 45;
 
         for (var i = 1; i <= numOfWords; i++) {
             dragElement(document.getElementById("mydiv" + i));
